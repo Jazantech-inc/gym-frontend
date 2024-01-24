@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class=" dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aa7c3b9ab0.js" crossorigin="anonymous"></script>
+
+    <title>Tailwind</title>
+</head>
+
+<body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+    <nav>
+        <div class=" container absolute flex justify-evenly items-center">
+            <span class="inline-block order-1">
+                <img src="./img/Circuit Technology Logo.png" alt="logo" class="h-24" />
+            </span>
+            <ul class="mb-0 order-3 flex space-x-3">
+                <li class="inline mb-0">
+                    <span>
+                        <span>
+                            <span class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-settings h-4 w-4">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg></span></span>
+                    </span>
+                </li>
+
+                <li class="inline ps-1 mb-0">
+                    <span>
+                        <div class="login-btn-light">
+                            <span
+                                class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-cart h-4 w-4">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg></span>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+            <div class="order-1">
+                <ul class="flex space-x-11 list-none dark:text-blue-900 text-white ">
+                    <li class="uppercase">Home</li>
+                    <li class="uppercase ">landing<i class="fa-solid fa-angle-down ml-1.5"></i></li>
+                    <li class="uppercase">pages<i class="fa-solid fa-angle-down ml-1.5"></i></li>
+                    <li class="uppercase">portfolio<i class="fa-solid fa-angle-down ml-1.5"></i></li>
+                    <li class="uppercase">docs<i class="fa-solid fa-angle-down ml-1.5"></i></li>
+                    <li class="uppercase">contact<i class="fa-solid fa-angle-down ml-1.5"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex md:h-screen py-36 items-center bg-[url('./img/bg1.jpg')] bg-center bg-no-repeat bg-cover">
+        <div class="container relative">
+            <div class="grid grid-cols-1 pb-8 text-center mt-10">
+                <h3 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-white">Build Your
+                    Body Strong</h3>
+
+                <p class="text-slate-300 text-lg max-w-xl mx-auto">Push your fitness further with our mix of facilities
+                    and we'll support you with advice on new and better ways to train.</p>
+
+                <div class="mt-8">
+                    <span
+                        class="py-2 px-5 inline-block font-semibold tracking-wide border transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full align-middle lightbox p-1 ps-4">3:07
+                        Min video <span
+                            class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-full ms-2"><i
+                                class="fa-solid fa-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="relative md:py-24 py-16 px-12">
+        <div class="container relative">
+            <div class="grid grid-cols-1 justify-center">
+                <div class="relative z-2 transition-all duration-500 ease-in-out sm:-mt-[200px] -mt-[140px] m-0">
+                    <div class="grid md:grid-cols-3 grid-cols-1 gap-[24px]">
+                        <div class="group relative overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-indigo-600/50">
+                            <img src="./img/scale.png" class="w-16 h-16 mx-auto" alt="">
+                            <div class="content mt-7">
+                                <h2 class="title text-xl font-semibold">Progression</h2>
+                                <p class="text-slate-400 mt-3">After you decide to start training we will make sure you
+                                    get the best fitness program. Our sport experts and latest sports equipment are the
+                                    winning combination.</p>
+                            </div>
+
+                            <div class="hidden group-hover:block">
+                                <div class="absolute inset-0">
+                                    <img src="./img/fea01.jpg" alt="">
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+                                </div>
+
+                                <div class="absolute bottom-0 start-0 end-0 mb-6">
+                                    <span href="" class="text-white text-xl font-bold">Progression</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="group relative overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-indigo-600/50">
+                            <img src="./img/kettlebell.png" class="w-16 h-16 mx-auto" alt="">
+
+                            <div class="content mt-7">
+                                <h2 class="title text-xl font-semibold">Workouts</h2>
+                                <p class="text-slate-400 mt-3">After you decide to start training we will make sure you
+                                    get the best fitness program. Our sport experts and latest sports equipment are the
+                                    winning combination.</p>
+                            </div>
+
+                            <div class="hidden group-hover:block">
+                                <div class="absolute inset-0">
+                                    <img src="./img/fea02.jpg" alt="">
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+                                </div>
+
+                                <div class="absolute bottom-0 start-0 end-0 mb-6">
+                                    <span href="" class="text-white text-xl font-bold">Workouts</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="group relative overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-indigo-600/50">
+                            <img src="./img/water-bottle.png" class="w-16 h-16 mx-auto" alt="">
+
+                            <div class="content mt-7">
+                                <h2 class="title text-xl font-semibold">Nutrition</h2>
+                                <p class="text-slate-400 mt-3">After you decide to start training we will make sure you
+                                    get the best fitness program. Our sport experts and latest sports equipment are the
+                                    winning combination.</p>
+                            </div>
+
+                            <div class="hidden group-hover:block">
+                                <div class="absolute inset-0">
+                                    <img src="./img/fea03.jpg" alt="">
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+                                </div>
+
+                                <div class="absolute bottom-0 start-0 end-0 mb-6">
+                                    <span href="" class="text-white text-xl font-bold">Nutrition</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                <div class="md:col-span-5">
+                    <div class="relative">
+                        <div class="pe-12">
+                            <img src="/img/about01.jpg" class="rounded-md" alt="">
+                        </div>
+
+                        <div class="absolute bottom-16 end-0">
+                            <img src="/img/about02.jpg" class="rounded-md shadow-md w-48 h-48" alt="">
+                            <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+                                <span
+                                    class="lightbox h-14 w-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                    <i class="fa-solid fa-play inline-flex items-center justify-center text-xl"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7">
+                    <div class="lg:ms-4">
+                        <h5 class="font-semibold text-base text-indigo-600 mb-2">Gym & Fitness</h5>
+                        <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Introducing
+                            Techwind, <br> A Fitness Center</h4>
+                        <p class="text-slate-400 max-w-xl">Push your fitness further with our mix of facilities and
+                            we'll support you with advice on new and better ways to train.</p>
+                        <p class="text-slate-400 max-w-xl mt-3">It seems that only fragments of the original text remain
+                            in the Lorem Ipsum texts used today. One may speculate that over the course of time certain
+                            letters were added or deleted at various positions within the text. This might also explain
+                            why one can now find slightly different versions.</p>
+                        <div class="mt-6">
+                            <span href=""
+                                class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Read
+                                More <i class="fa-solid fa-angle-right align-middle"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h5 class="font-semibold text-base text-indigo-600 mb-2">Gallery</h5>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Take a Sneak Peek
+                    Inside</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Push your fitness further with our mix of facilities and
+                    we'll support you with advice on new and better ways to train.</p>
+            </div>
+
+            <div class="grid md:grid-cols-5 grid-cols-2 justify-center mx-auto mt-8">
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/01.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/01.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/02.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/02.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/03.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/03.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/04.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/04.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/05.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/05.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/06.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/06.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/07.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/07.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/08.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/08.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/09.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/09.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+
+                <div class="group relative block overflow-hidden transition-all duration-500">
+                    <span href="/img/10.jpg" class="lightbox transition-all duration-500 group-hover:scale-105"
+                        title="">
+                        <img src="/img/10.jpg" class="" alt="Gym Images">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h5 class="font-semibold text-base text-indigo-600 mb-2">Timetable</h5>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Gym Schedule</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Push your fitness further with our mix of facilities and
+                    we'll support you with advice on new and better ways to train.</p>
+            </div>
+
+
+            <div class="grid grid-cols-1 items-center mt-8">
+                <div class="filters-group-wrap text-center">
+                    <div class="filters-group">
+                        <ul class="mb-0 list-none container-filter filter-options">
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500 active"
+                                data-group="all">All</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="monday">Monday</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="tuesday">Tuesday</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="wednesday">Wednesday</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="thursday">Thursday</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="friday">Friday</li>
+                            <li class="inline-block font-medium text-lg mx-2 mb-3 cursor-pointer relative text-slate-400 transition duration-500"
+                                data-group="saturday">Saturday</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" flex-wrap md:flex justify-center mx-auto mt-4">
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/bench-press.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Deadlift</h5>
+                            <small class="text-slate-400 mb-0">06AM - 07AM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/chest-expander.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Back squat</h5>
+                            <small class="text-slate-400 mb-0">07AM - 08AM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/dumbbell.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Bench Press</h5>
+                            <small class="text-slate-400 mb-0">08AM - 09AM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/gymnastic-rings.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Dumbbell</h5>
+                            <small class="text-slate-400 mb-0">09AM - 10AM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/hand-grip.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Pushups</h5>
+                            <small class="text-slate-400 mb-0">11AM - 12PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/skipping-rope.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Chest</h5>
+                            <small class="text-slate-400 mb-0">05PM - 06PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/kettlebell.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Kettlebell</h5>
+                            <small class="text-slate-400 mb-0">06PM - 07PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/man.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Pullup</h5>
+                            <small class="text-slate-400 mb-0">07PM - 08PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/pool.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Biceps</h5>
+                            <small class="text-slate-400 mb-0">08PM - 09PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/punching-bag-2.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Triceps</h5>
+                            <small class="text-slate-400 mb-0">09PM - 10PM</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/6 md:w-1/4 w-1/2 picture-item p-4">
+                    <div class="text-center p-6 shadow dark:shadow-gray-800 rounded-md">
+                        <img src="/img/punching-bag.png" class="h-16 w-16 mx-auto" alt="">
+
+                        <div class="content mt-6">
+                            <h5 class="font-semibold text-lg">Legs</h5>
+                            <small class="text-slate-400 mb-0">11PM - 12AM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h5 class="font-semibold text-base text-indigo-600 mb-2">Team</h5>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Gym Trainer</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Push your fitness further with our mix of facilities and
+                    we'll support you with advice on new and better ways to train.</p>
+            </div>
+
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                <div class="group relative rounded-md overflow-hidden shadow text-center">
+                    <img src="/img/team1.jpg" alt="">
+                    <div
+                        class="absolute inset-0 group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-black transition duration-300 ease-in">
+                    </div>
+
+                    <div
+                        class="content absolute bottom-0 group-hover:bottom-6 start-0 end-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+                        <h4 class="text-lg font-medium text-white">Calvin Carlo</h4>
+                        <p class="text-white/50 relative -bottom-5 group-hover:bottom-0 transition-all duration-500">
+                            Trainer</p>
+
+                        <ul class="list-none relative -bottom-12 group-hover:bottom-0 transition-all duration-500 mt-4">
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/facebook.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/instagram.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/twitter.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/linkedin.svg" class="h-4 w-4"></img></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-md overflow-hidden shadow text-center">
+                    <img src="/img/team2.jpg" alt="">
+                    <div
+                        class="absolute inset-0 group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-black transition duration-300 ease-in">
+                    </div>
+
+                    <div
+                        class="content absolute bottom-0 group-hover:bottom-6 start-0 end-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+                        <h4 class="text-lg font-medium text-white">Judith Williams</h4>
+                        <p class="text-white/50 relative -bottom-5 group-hover:bottom-0 transition-all duration-500">
+                            Trainer</p>
+
+                        <ul class="list-none relative -bottom-12 group-hover:bottom-0 transition-all duration-500 mt-4">
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/facebook.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/instagram.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/twitter.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/linkedin.svg" class="h-4 w-4"></img></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-md overflow-hidden shadow text-center">
+                    <img src="/img/team3.jpg" alt="">
+                    <div
+                        class="absolute inset-0 group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-black transition duration-300 ease-in">
+                    </div>
+
+                    <div
+                        class="content absolute bottom-0 group-hover:bottom-6 start-0 end-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+                        <h4 class="text-lg font-medium text-white">John Hodge</h4>
+                        <p class="text-white/50 relative -bottom-5 group-hover:bottom-0 transition-all duration-500">
+                            Trainer</p>
+
+                        <ul class="list-none relative -bottom-12 group-hover:bottom-0 transition-all duration-500 mt-4">
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/facebook.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/instagram.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/twitter.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/linkedin.svg" class="h-4 w-4"></img></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-md overflow-hidden shadow text-center">
+                    <img src="/img/team4.jpg" alt="">
+                    <div
+                        class="absolute inset-0 group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-black transition duration-300 ease-in">
+                    </div>
+
+                    <div
+                        class="content absolute bottom-0 group-hover:bottom-6 start-0 end-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+                        <h4 class="text-lg font-medium text-white">Frances Bartley</h4>
+                        <p class="text-white/50 relative -bottom-5 group-hover:bottom-0 transition-all duration-500">
+                            Trainer</p>
+
+                        <ul class="list-none relative -bottom-12 group-hover:bottom-0 transition-all duration-500 mt-4">
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/facebook.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/instagram.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/twitter.svg" class="h-4 w-4"></img></a></li>
+                            <li class="inline"><span href=""
+                                    class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border text-white rounded-md border-indigo-600 bg-indigo-600"><img
+                                        src="/img/linkedin.svg" class="h-4 w-4"></img></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-20 w-full table relative bg-[url('/img/cta.jpg')] bg-center bg-no-repeat bg-fixed bg-cover">
+        <div class="absolute inset-0 bg-black opacity-80"></div>
+        <div class="container relative">
+            <div class="grid grid-cols-1 text-center">
+                <h3 class="mb-4 md:text-3xl text-2xl text-white font-medium">Get Membership for Speak Fitness</h3>
+
+                <p class="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you
+                    need to generate awareness, drive traffic, connect.</p>
+
+                <div class="mt-6">
+                    <span href=""
+                        class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Buy
+                        Membership</span>
+                </div>
+
+                <span
+                    class="lightbox h-20 w-20 rounded-full shadow-md dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
+                    <i class="fa-solid fa-play inline-flex items-center justify-center text-2xl"></i>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="relative md:py-24 py-16">
+        <div class="container relative">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h5 class="font-semibold text-base text-indigo-600 mb-2">Testimonial</h5>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Trusted by <br> Our
+                    Customers</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Push your fitness further with our mix of facilities and
+                    we'll support you with advice on new and better ways to train.</p>
+            </div>
+
+            <div class="grid grid-cols-1 mt-8">
+                <div class="grid grid-cols-3">
+                    <div class="text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" It seems that only fragments of the original text remain in
+                                    the Lorem Ipsum texts used today. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/01 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Calvin Carlo</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" The most well-known dummy text is the 'Lorem Ipsum', which
+                                    is said to have originated in the 16th century. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/02 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Christa Smith</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" One disadvantage of Lorum Ipsum is that in Latin certain
+                                    letters appear more frequently than others. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/03 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Jemina CLone</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" Thus, Lorem Ipsum has only limited suitability as a visual
+                                    filler for German texts. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/04 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Smith Vodka</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" There is now an abundance of readable dummy texts. These are
+                                    usually used when a text is required. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/05 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div
+                                class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                                <p class="text-slate-400">" According to most sources, Lorum Ipsum can be traced back to
+                                a text composed by Cicero. "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                    <li class="inline"><i class="fa-solid fa-star"></i></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img src="/img/06 (1).jpg" class="h-14 w-14 rounded-full shadow-md mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                                <span class="text-slate-400 text-sm">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h5 class="font-semibold text-base text-indigo-600 mb-2">Blogs</h5>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Blogs or News
+                </h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Push your fitness further with our mix of facilities and
+                    we'll support you with advice on new and better ways to train.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-8 gap-[30px]">
+                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                    <img src="/img/blog1.jpg" alt="">
+
+                    <div class="content p-6">
+                        <span
+                            class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">How to
+                            Maximize Time Spent at the Gym</span>
+                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
+                            benefit</p>
+
+                        <div class="mt-4">
+                            <span
+                                class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                                More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                    <img src="/img/blog2.jpg" alt="">
+
+                    <div class="content p-6">
+                        <span
+                            class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">Today is
+                            the Best Day to Start Training</span>
+                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
+                            benefit</p>
+
+                        <div class="mt-4">
+                            <span
+                                class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                                More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                    <img src="/img/blog3.jpg" alt="">
+
+                    <div class="content p-6">
+                        <span
+                            class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">Simple
+                            Condition for all Around Fitness</span>
+                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
+                            benefit</p>
+
+                        <div class="mt-4">
+                            <span
+                                class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                                More <i class="fa-solid fa-arrow-right"></i></span>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- footer -->
+    
+     <footer class=" bg-dark-footer relative text-gray-200 dark:text-gray-200">    
+        <div class="container relative">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12">
+                    <div class="py-[60px] px-0">                    
+                        <div class="grid grid-cols-1">
+                            <div class="text-center">
+                                <img src="/img/Circuit Technology Logo.png" class="block mx-auto" alt="">
+                                <p class="max-w-xl mx-auto mt-8">Splash your dream color Bring your home to lively Colors. We make it a priority to offer flexible services to accomodate your needs</p>
+                            </div>
+
+                            <ul class="list-none text-center mt-8">
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class=" fa-solid fa-cart-shopping align-middle"></i></span></li>
+                                
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-basketball align-middle"></i></span></li>
+
+                                <li class="inline"><span class=" h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-face-smile-beam align-middle"></i></span></li>
+
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-link align-middle"></i></span></li>
+
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-arrow-up-right-from-square align-middle"></i></span></li>
+
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-image align-middle"></i></span></li>
+
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-location-dot align-middle"></i></span></li>
+
+                                <li class="inline"><span class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-music align-middle"></i></span></li>
+
+                                <li class="inline"><span  class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="fa-solid fa-heart align-middle"></i></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-[30px] px-0 border-t border-slate-800">
+            <div class="container relative text-center">
+                <div class="grid md:grid-cols-1">
+                    <p class="mb-0">© Design with <i class=" fa-solid fa-heart text-red-600"></i> Haris.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="fixed top-[30%] -right-2 z-50">
+        <span class="relative inline-block rotate-90">
+            <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+            <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk" id="theme-mode">
+                <i class="fa-light fa-moon text-[20px] text-yellow-500" ></i>
+                <i class="fa-regular fa-sun text-[20px] text-yellow-500" ></i>
+                <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+            </label>
+        </span>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
